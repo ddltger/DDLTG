@@ -1,5 +1,0 @@
-/Users/zing/Demo/DDLTG/build/CMakeFiles/ALL_BUILD.dir
-/Users/zing/Demo/DDLTG/build/CMakeFiles/ZERO_CHECK.dir
-/Users/zing/Demo/DDLTG/build/TTDemo/CMakeFiles/TTDemoApp.dir
-/Users/zing/Demo/DDLTG/build/TTDemo/CMakeFiles/ALL_BUILD.dir
-/Users/zing/Demo/DDLTG/build/TTDemo/CMakeFiles/ZERO_CHECK.dir
