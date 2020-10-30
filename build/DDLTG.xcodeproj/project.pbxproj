@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1F015E20D67D489BAF393168 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2EA35FCE581D42D4BF24D191 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				682B475859D147B9AEA9E1CA /* CMake Rules */,
+			);
+			dependencies = (
+				5D617CEF8ECB4305A153D46E /* PBXTargetDependency */,
+				DFF22A436B964950AE54709D /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		34BD07E6A80C4E25A7C37C07 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FBB85354D2EC4D7BAD2316E7 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				7D2C8976809143D8B744713A /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		092355CA994240248D094E2E /* /Users/zing/Demo/DDLTG/TTDemo/ViewController.h */ = {isa = PBXBuildFile; fileRef = 074ACF1C5F1A4639BB7FD7C5 /* /Users/zing/Demo/DDLTG/TTDemo/ViewController.h */; };
+		0EA05BCBB1A54D739344BB48 /* /Users/zing/Demo/DDLTG/TTDemo/main.m */ = {isa = PBXBuildFile; fileRef = B9D84729C851405EBB2EDE25 /* /Users/zing/Demo/DDLTG/TTDemo/main.m */; };
+		132D03E24E3F4997B4E50A88 /* /Users/zing/Demo/DDLTG/TTDemo/ViewController.mm */ = {isa = PBXBuildFile; fileRef = FF0F2579B9EA4A819C20EC88 /* /Users/zing/Demo/DDLTG/TTDemo/ViewController.mm */; };
+		2E3424FFB8F34FE1BC2031DB /* /Users/zing/Demo/DDLTG/TTDemo/AppDelegate.h */ = {isa = PBXBuildFile; fileRef = F7B1B2DAE2D140EC9D054F63 /* /Users/zing/Demo/DDLTG/TTDemo/AppDelegate.h */; };
+		340D9FCC7F21448DAF81EF0E /* /Users/zing/Demo/DDLTG/TTDemo/AAPLEAGLLayer/AAPLEAGLLayer.mm */ = {isa = PBXBuildFile; fileRef = 1B8E015ABD6E4F848A5E51F4 /* /Users/zing/Demo/DDLTG/TTDemo/AAPLEAGLLayer/AAPLEAGLLayer.mm */; };
+		4740EB16C7F24418BFA9A235 /* /Users/zing/Demo/DDLTG/TTDemo/Main.storyboard */ = {isa = PBXBuildFile; fileRef = 05AAEAA2459F486A911DEB4E /* /Users/zing/Demo/DDLTG/TTDemo/Main.storyboard */; };
+		5545C1AACEC24F5F9F7F0E08 /* /Users/zing/Demo/DDLTG/TTDemo/stb/stb_truetype.h */ = {isa = PBXBuildFile; fileRef = 08D4359708764845AB33A749 /* /Users/zing/Demo/DDLTG/TTDemo/stb/stb_truetype.h */; };
+		5E021E7E2F2648CCB69A735B /* /Users/zing/Demo/DDLTG/build/TTDemo/CMakeFiles/TTDemoApp.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = C083244EB5AE47C4AC18D417 /* /Users/zing/Demo/DDLTG/build/TTDemo/CMakeFiles/TTDemoApp.dir/Info.plist */; };
+		67B4890D24854EC8BA71F671 /* /Users/zing/Demo/DDLTG/TTDemo/LaunchScreen.storyboard */ = {isa = PBXBuildFile; fileRef = 154F94BF4D8248FC8132B395 /* /Users/zing/Demo/DDLTG/TTDemo/LaunchScreen.storyboard */; };
+		6830C38F9ECD4516B8B70823 /* /Users/zing/Demo/DDLTG/TTDemo/AAPLEAGLLayer/AAPLEAGLLayer.h */ = {isa = PBXBuildFile; fileRef = 6432159C75604EC5891C2ACC /* /Users/zing/Demo/DDLTG/TTDemo/AAPLEAGLLayer/AAPLEAGLLayer.h */; };
+		6CE461BC2B304120855FA231 /* /Users/zing/Demo/DDLTG/TTDemo/AppDelegate.m */ = {isa = PBXBuildFile; fileRef = 1436DFFC453348A19A41A183 /* /Users/zing/Demo/DDLTG/TTDemo/AppDelegate.m */; };
+		9695A956112D4324B45D96D9 /* /Users/zing/Demo/DDLTG/TTDemo/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = EC00E720430146569BCE439E /* /Users/zing/Demo/DDLTG/TTDemo/CMakeLists.txt */; };
+		A313E282191441FA8B6B7192 /* /Users/zing/Demo/DDLTG/TTDemo/Prefix.pch */ = {isa = PBXBuildFile; fileRef = 566D821B90E943A3940C7F97 /* /Users/zing/Demo/DDLTG/TTDemo/Prefix.pch */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		35DB94C6737947C18011CA18 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		A619F98165A44DC48DBBCABE /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		B3A421867F3145639182EFB2 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		BEB68D699513472EB40BB2F9 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		02C25E09B15A4D4E87B782BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9D55EA9ED494587A4B19BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34BD07E6A80C4E25A7C37C07;
+			remoteInfo = ZERO_CHECK;
+		};
+		6AA019D157534F1DA103CE8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9D55EA9ED494587A4B19BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEAE1A1824F64CE884AA4CB4;
+			remoteInfo = TTDemoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05AAEAA2459F486A911DEB4E /* /Users/zing/Demo/DDLTG/TTDemo/Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = TTDemo/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		074ACF1C5F1A4639BB7FD7C5 /* /Users/zing/Demo/DDLTG/TTDemo/ViewController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ViewController.h; path = TTDemo/ViewController.h; sourceTree = SOURCE_ROOT; };
+		08D4359708764845AB33A749 /* /Users/zing/Demo/DDLTG/TTDemo/stb/stb_truetype.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stb_truetype.h; path = TTDemo/stb/stb_truetype.h; sourceTree = SOURCE_ROOT; };
+		0B3A52D4E99F4A57A447F0FF /* TTDemoApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = TTDemoApp; sourceTree = BUILT_PRODUCTS_DIR; };
+		1436DFFC453348A19A41A183 /* /Users/zing/Demo/DDLTG/TTDemo/AppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = AppDelegate.m; path = TTDemo/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		154F94BF4D8248FC8132B395 /* /Users/zing/Demo/DDLTG/TTDemo/LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TTDemo/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		1B8E015ABD6E4F848A5E51F4 /* /Users/zing/Demo/DDLTG/TTDemo/AAPLEAGLLayer/AAPLEAGLLayer.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = AAPLEAGLLayer.mm; path = TTDemo/AAPLEAGLLayer/AAPLEAGLLayer.mm; sourceTree = SOURCE_ROOT; };
+		566D821B90E943A3940C7F97 /* /Users/zing/Demo/DDLTG/TTDemo/Prefix.pch */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Prefix.pch; path = TTDemo/Prefix.pch; sourceTree = SOURCE_ROOT; };
+		6432159C75604EC5891C2ACC /* /Users/zing/Demo/DDLTG/TTDemo/AAPLEAGLLayer/AAPLEAGLLayer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AAPLEAGLLayer.h; path = TTDemo/AAPLEAGLLayer/AAPLEAGLLayer.h; sourceTree = SOURCE_ROOT; };
+		B9D84729C851405EBB2EDE25 /* /Users/zing/Demo/DDLTG/TTDemo/main.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = main.m; path = TTDemo/main.m; sourceTree = SOURCE_ROOT; };
+		C083244EB5AE47C4AC18D417 /* /Users/zing/Demo/DDLTG/build/TTDemo/CMakeFiles/TTDemoApp.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = build/TTDemo/CMakeFiles/TTDemoApp.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		EC00E720430146569BCE439E /* /Users/zing/Demo/DDLTG/TTDemo/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = TTDemo/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F7537204EEAA4FE19C47BC38 /* /Users/zing/Demo/DDLTG/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F7B1B2DAE2D140EC9D054F63 /* /Users/zing/Demo/DDLTG/TTDemo/AppDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AppDelegate.h; path = TTDemo/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		FF0F2579B9EA4A819C20EC88 /* /Users/zing/Demo/DDLTG/TTDemo/ViewController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ViewController.mm; path = TTDemo/ViewController.mm; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		11A321077C794523A12F461B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B8E015ABD6E4F848A5E51F4 /* /Users/zing/Demo/DDLTG/TTDemo/AAPLEAGLLayer/AAPLEAGLLayer.mm */,
+				1436DFFC453348A19A41A183 /* /Users/zing/Demo/DDLTG/TTDemo/AppDelegate.m */,
+				FF0F2579B9EA4A819C20EC88 /* /Users/zing/Demo/DDLTG/TTDemo/ViewController.mm */,
+				B9D84729C851405EBB2EDE25 /* /Users/zing/Demo/DDLTG/TTDemo/main.m */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		698DC57576A5414595B387AB /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		86BB19C8C5DE4B018BBF549C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B3A52D4E99F4A57A447F0FF /* TTDemoApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		903F9F644E35480390E933C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				154F94BF4D8248FC8132B395 /* /Users/zing/Demo/DDLTG/TTDemo/LaunchScreen.storyboard */,
+				05AAEAA2459F486A911DEB4E /* /Users/zing/Demo/DDLTG/TTDemo/Main.storyboard */,
+				C083244EB5AE47C4AC18D417 /* /Users/zing/Demo/DDLTG/build/TTDemo/CMakeFiles/TTDemoApp.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		982AF4CFACFA4F80BE47C062 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				698DC57576A5414595B387AB /* CMake Rules */,
+				F7537204EEAA4FE19C47BC38 /* /Users/zing/Demo/DDLTG/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		A03A3303E3674047AF34B926 = {
+			isa = PBXGroup;
+			children = (
+				982AF4CFACFA4F80BE47C062 /* ALL_BUILD */,
+				DE6773C890FA4ACC84B589FF /* TTDemoApp */,
+				86BB19C8C5DE4B018BBF549C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C142CD41A5D74A3582AD2A5A /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				6432159C75604EC5891C2ACC /* /Users/zing/Demo/DDLTG/TTDemo/AAPLEAGLLayer/AAPLEAGLLayer.h */,
+				F7B1B2DAE2D140EC9D054F63 /* /Users/zing/Demo/DDLTG/TTDemo/AppDelegate.h */,
+				074ACF1C5F1A4639BB7FD7C5 /* /Users/zing/Demo/DDLTG/TTDemo/ViewController.h */,
+				08D4359708764845AB33A749 /* /Users/zing/Demo/DDLTG/TTDemo/stb/stb_truetype.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		DE6773C890FA4ACC84B589FF /* TTDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				C142CD41A5D74A3582AD2A5A /* Header Files */,
+				11A321077C794523A12F461B /* Source Files */,
+				903F9F644E35480390E933C9 /* Resources */,
+				EC00E720430146569BCE439E /* /Users/zing/Demo/DDLTG/TTDemo/CMakeLists.txt */,
+				566D821B90E943A3940C7F97 /* /Users/zing/Demo/DDLTG/TTDemo/Prefix.pch */,
+			);
+			name = TTDemoApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEAE1A1824F64CE884AA4CB4 /* TTDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EF87AC652674133A9F4D374 /* Build configuration list for PBXNativeTarget "TTDemoApp" */;
+			buildPhases = (
+				A7C0B40F13C14069A697F697 /* Resources */,
+				3E70D5058AD445D6A79BD50D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTDemoApp;
+			productName = TTDemoApp;
+			productReference = 0B3A52D4E99F4A57A447F0FF /* TTDemoApp */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9D55EA9ED494587A4B19BA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1210;
+			};
+			buildConfigurationList = DC6BE5D39F544A84A5F3267D /* Build configuration list for PBXProject "DDLTG" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				A619F98165A44DC48DBBCABE /* Debug */,
+				35DB94C6737947C18011CA18 /* Release */,
+				B3A421867F3145639182EFB2 /* MinSizeRel */,
+				BEB68D699513472EB40BB2F9 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = A03A3303E3674047AF34B926;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				1F015E20D67D489BAF393168 /* ALL_BUILD */,
+				BEAE1A1824F64CE884AA4CB4 /* TTDemoApp */,
+				34BD07E6A80C4E25A7C37C07 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		682B475859D147B9AEA9E1CA /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zing/Demo/DDLTG/build -f /Users/zing/Demo/DDLTG/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		760AB20BC801417C8FD6D797 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7D2C8976809143D8B744713A /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/zing/Demo/DDLTG/build -f /Users/zing/Demo/DDLTG/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		EEAAEE751DE0419188A9825E = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7C0B40F13C14069A697F697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B4890D24854EC8BA71F671 /* /Users/zing/Demo/DDLTG/TTDemo/LaunchScreen.storyboard */,
+				4740EB16C7F24418BFA9A235 /* /Users/zing/Demo/DDLTG/TTDemo/Main.storyboard */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E70D5058AD445D6A79BD50D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340D9FCC7F21448DAF81EF0E /* /Users/zing/Demo/DDLTG/TTDemo/AAPLEAGLLayer/AAPLEAGLLayer.mm */,
+				6CE461BC2B304120855FA231 /* /Users/zing/Demo/DDLTG/TTDemo/AppDelegate.m */,
+				132D03E24E3F4997B4E50A88 /* /Users/zing/Demo/DDLTG/TTDemo/ViewController.mm */,
+				0EA05BCBB1A54D739344BB48 /* /Users/zing/Demo/DDLTG/TTDemo/main.m */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D617CEF8ECB4305A153D46E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEAE1A1824F64CE884AA4CB4 /* TTDemoApp */;
+			targetProxy = 6AA019D157534F1DA103CE8F /* PBXContainerItemProxy */;
+		};
+		DFF22A436B964950AE54709D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34BD07E6A80C4E25A7C37C07 /* ZERO_CHECK */;
+			targetProxy = 02C25E09B15A4D4E87B782BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07AF4F7E5AA64984A75AC066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				ENABLE_BITCODE = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/zing/Demo/DDLTG/build/build;
+			};
+			name = Release;
+		};
+		14B837CF31384E05A65FB15B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = GY75F3QFTH;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/zing/Demo/DDLTG/TTDemo/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = /Users/zing/Demo/DDLTG/build/TTDemo/CMakeFiles/TTDemoApp.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "       -DNDEBUG ";
+				OTHER_CPLUSPLUSFLAGS = " -fobjc-arc        -DNDEBUG '-std=c++11' ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework UIKit -framework AVFoundation -framework OpenGLES";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TTDemoApp;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zing/Demo/DDLTG/build/TTDemo;
+				TARGETED_DEVICE_FAMILY = 1;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		22B3C8B50B4040F48AC3C6DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zing/Demo/DDLTG/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		23DE0126599A4534807E9FD0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = GY75F3QFTH;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/zing/Demo/DDLTG/TTDemo/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = /Users/zing/Demo/DDLTG/build/TTDemo/CMakeFiles/TTDemoApp.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "    -DNDEBUG ";
+				OTHER_CPLUSPLUSFLAGS = " -fobjc-arc     -DNDEBUG '-std=c++11' ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework UIKit -framework AVFoundation -framework OpenGLES";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TTDemoApp;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zing/Demo/DDLTG/build/TTDemo;
+				TARGETED_DEVICE_FAMILY = 1;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		298F090CDCE0427192CDFAF2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zing/Demo/DDLTG/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3AF4207D5AFA4F42B336B6A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zing/Demo/DDLTG/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		668737A3FEE0479A8E5BD7CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zing/Demo/DDLTG/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		6BAB3B4E05204191A1B7D79C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zing/Demo/DDLTG/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7328E3E4A55349F58CCC32DA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zing/Demo/DDLTG/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		74E6A911C01D4ECBACB3CC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				ENABLE_BITCODE = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/zing/Demo/DDLTG/build/build;
+			};
+			name = Debug;
+		};
+		7D6A547BDF4341859AE7263F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				ENABLE_BITCODE = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/zing/Demo/DDLTG/build/build;
+			};
+			name = MinSizeRel;
+		};
+		851C4E2362794BEF8EBDE32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = GY75F3QFTH;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/zing/Demo/DDLTG/TTDemo/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = /Users/zing/Demo/DDLTG/build/TTDemo/CMakeFiles/TTDemoApp.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "   ";
+				OTHER_CPLUSPLUSFLAGS = " -fobjc-arc    '-std=c++11' ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework UIKit -framework AVFoundation -framework OpenGLES";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TTDemoApp;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zing/Demo/DDLTG/build/TTDemo;
+				TARGETED_DEVICE_FAMILY = 1;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		86CAF20BBC5D413B8120A1E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zing/Demo/DDLTG/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		A3F98C0786C84C96B7FD6FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = GY75F3QFTH;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/zing/Demo/DDLTG/TTDemo/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = /Users/zing/Demo/DDLTG/build/TTDemo/CMakeFiles/TTDemoApp.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "    -DNDEBUG ";
+				OTHER_CPLUSPLUSFLAGS = " -fobjc-arc     -DNDEBUG '-std=c++11' ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework UIKit -framework AVFoundation -framework OpenGLES";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TTDemoApp;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zing/Demo/DDLTG/build/TTDemo;
+				TARGETED_DEVICE_FAMILY = 1;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B3D3976B76924A6A8FA80E3F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				ENABLE_BITCODE = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/zing/Demo/DDLTG/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		C26AF3C78927494599377544 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zing/Demo/DDLTG/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EA35FCE581D42D4BF24D191 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				668737A3FEE0479A8E5BD7CC /* Debug */,
+				86CAF20BBC5D413B8120A1E8 /* Release */,
+				298F090CDCE0427192CDFAF2 /* MinSizeRel */,
+				6BAB3B4E05204191A1B7D79C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9EF87AC652674133A9F4D374 /* Build configuration list for PBXNativeTarget "TTDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851C4E2362794BEF8EBDE32E /* Debug */,
+				A3F98C0786C84C96B7FD6FBA /* Release */,
+				23DE0126599A4534807E9FD0 /* MinSizeRel */,
+				14B837CF31384E05A65FB15B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DC6BE5D39F544A84A5F3267D /* Build configuration list for PBXProject "DDLTG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74E6A911C01D4ECBACB3CC4A /* Debug */,
+				07AF4F7E5AA64984A75AC066 /* Release */,
+				7D6A547BDF4341859AE7263F /* MinSizeRel */,
+				B3D3976B76924A6A8FA80E3F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FBB85354D2EC4D7BAD2316E7 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF4207D5AFA4F42B336B6A4 /* Debug */,
+				22B3C8B50B4040F48AC3C6DD /* Release */,
+				7328E3E4A55349F58CCC32DA /* MinSizeRel */,
+				C26AF3C78927494599377544 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9D55EA9ED494587A4B19BA0 /* Project object */;
+}

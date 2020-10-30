@@ -1,0 +1,23 @@
+-x
+objective-c++
+-target
+arm64-apple-ios9.0
+-fobjc-arc
+-gmodules
+-fpascal-strings
+-O0
+-DCMAKE_INTDIR="Debug-iphoneos"
+-DOBJC_OLD_DISPATCH_PROTOTYPES=1
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk
+-g
+-fvisibility=hidden
+-I/Users/zing/Demo/DDLTG/build/TTDemo/Debug-iphoneos/include
+-I/Users/zing/Demo/DDLTG/build/TTDemo/DDLTG.build/Debug-iphoneos/TTDemoApp.build/DerivedSources-normal/arm64
+-F/Users/zing/Demo/DDLTG/build/TTDemo/Debug-iphoneos
+-fobjc-arc
+-std=c++11
+aarch64-apple-darwin19.6.0
+"Apple LLVM 12.0.0 (clang-1200.0.32.21)"
+SDK_PRODUCT_BUILD_VERSION=18A8394
+18A8394
