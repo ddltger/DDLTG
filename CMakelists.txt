@@ -5,5 +5,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 project(DDLTG)
+set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/CMake")
+
+set(DDLTG_TEMPLATES_DIR "${PROJECT_SOURCE_DIR}/CMake/Templates")
+set(OGRE_WORK_DIR ${PROJECT_BINARY_DIR})
+
+include(DDLTGBuildSetting)
+
+add_subdirectory(font)
+
+add_subdirectory(Common)
 
 add_subdirectory(TTDemo)

@@ -1,0 +1,16 @@
+# Sets the minimum version of CMake required to build the native library.
+cmake_minimum_required(VERSION 3.4.1)
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+set(OGRE_SOURCE_DIR           ${CMAKE_CURRENT_SOURCE_DIR}/../)
+set(FONT_DIR                  ${CMAKE_CURRENT_SOURCE_DIR})
+set(OGRE_BUILD_DIR            ${CMAKE_CURRENT_SOURCE_DIR}/../build/)
+set(HB_ICU_FREETYPE_BUILD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/thirdParty/harfbuzz-icu-freetype/)
+
+####################################################################
+include_directories(
+    ${FONT_DIR}/Common/include/
+)
+
+add_subdirectory(${HB_ICU_FREETYPE_BUILD_DIR})

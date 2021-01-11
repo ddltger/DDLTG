@@ -1,0 +1,56 @@
+cmake_minimum_required (VERSION 3.7)
+
+include_directories(
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/"
+)
+
+file(GLOB_RECURSE HEADER_FILES 
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h")
+
+file(GLOB_RECURSE SOURCE_FILES 
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
+
+ # The three commented lines attach resource bundle to be a part of the framework.
+    # set(RESOURCES "${CMAKE_CURRENT_SOURCE_DIR}/../BMMResources/BMMResources.bundle")
+    add_library(DDLTGFont ${HEADER_FILES} ${SOURCE_FILES})
+    target_link_libraries(DDLTGFont PUBLIC freetype harfbuzz)
+
+    file(GLOB PUBLIC_HEADER_FILES
+       "${CMAKE_CURRENT_SOURCE_DIR}/Common/Main/include/*.h"
+    )
+    set(DDLTGFONT_PUBLIC_HEADERS ${PUBLIC_HEADER_FILES})
+
+    set(CODE_SIGN_IDENTITY "iPhone Developer")                  
+                                                   
+    set(DEPLOYMENT_TARGET 8.0)                                  
+    set(DEVICE_FAMILY "1")                                      
+    set(DEVELOPMENT_TEAM_ID "GY75F3QFTH")                       
+
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror")
+
+    set_target_properties(DDLTGFont PROPERTIES
+        MACOSX_BUNDLE FALSE
+        FRAMEWORK FALSE
+        FRAMEWORK_VERSION A
+        MACOSX_FRAMEWORK_IDENTIFIER "com.berg.test"
+        MACOSX_FRAMEWORK_INFO_PLIST ${CMAKE_CURRENT_LIST_DIR}/framework.plist.in
+        VERSION 1.0.0
+        SOVERSION 1.0.0
+        PUBLIC_HEADER "${DDLTGFONT_PUBLIC_HEADERS}"
+        XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET ${DEPLOYMENT_TARGET}
+        XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY ${CODE_SIGN_IDENTITY}
+        XCODE_ATTRIBUTE_DEVELOPMENT_TEAM ${DEVELOPMENT_TEAM_ID}
+        XCODE_ATTRIBUTE_TARGETED_DEVICE_FAMILY ${DEVICE_FAMILY}
+        XCODE_ATTRIBUTE_SKIP_INSTALL "YES"
+    )
+    execute_process(COMMAND bash "-c" "git describe --tags --always --dirty=-dev" OUTPUT_VARIABLE RELEASE_VERSION)
+    string(REPLACE "\n" "" RELEASE_VERSION_RET ${RELEASE_VERSION})
+    target_compile_definitions(DDLTGFont PUBLIC $<$<CONFIG:RELEASE>:VERSION="${RELEASE_VERSION_RET}">)
+
+    install(FILES ${DDLTGFONT_PUBLIC_HEADERS}
+        DESTINATION include/DDLTGFont
+    )
+    set_target_properties(DDLTGFont PROPERTIES OUTPUT_NAME DDLTGFontStatic)
+    install (TARGETS DDLTGFont 
+    CONFIGURATIONS Release None ""
+    ARCHIVE DESTINATION lib/Release)

@@ -6,8 +6,10 @@
 //
 
 #import "ViewController.h"
+#include "TTDisplayLayer.h"
 
 @interface ViewController ()
+@property (nonatomic, strong) TTDisplayLayer *displayLayer;
 
 @end
 
@@ -16,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _displayLayer = [[TTDisplayLayer alloc] initWithFrame:CGRectMake(0, 0, 414, 736)];
+    [self.view.layer addSublayer:_displayLayer];
 }
 
 
