@@ -10,8 +10,6 @@ set(DEPLOYMENT_TARGET 9.0)                                  # <== Set your deplo
 set(DEVICE_FAMILY "1")                                      # <== Set to "1" to target iPhone, set to "2" to target iPad, set to "1,2" to target both
 set(LOGIC_ONLY_TESTS 0)                                     # <== Set to 1 if you do not want tests to be hosted by the application, speeds up pure logic tests but you can not run them on real devices
 
-project(${DEVELOPMENT_PROJECT_NAME})
-
 set(PRODUCT_NAME ${APP_NAME})
 set(EXECUTABLE_NAME ${APP_NAME})
 set(MACOSX_BUNDLE_EXECUTABLE_NAME ${APP_NAME})
@@ -28,29 +26,33 @@ set(MACOSX_DEPLOYMENT_TARGET ${DEPLOYMENT_TARGET})
 set(APP_HEADER_FILES
   ./AppDelegate.h
   ./ViewController.h
+  ./TTDisplayLayer.h
   ./Prefix.pch
 )
 
-file(GLOB STB_HEADER_FILES "${CMAKE_CURRENT_SOURCE_DIR}/stb/*.h")
-list(APPEND APP_HEADER_FILES ${STB_HEADER_FILES})
+#file(GLOB STB_HEADER_FILES "${CMAKE_CURRENT_SOURCE_DIR}/stb/*.h")
+#list(APPEND APP_HEADER_FILES ${STB_HEADER_FILES})
 
-#file(GLOB EAGL_HEADER_FILES "${CMAKE_CURRENT_SOURCE_DIR}/AAPLEAGLLayer/*.h")
-#list(APPEND APP_HEADER_FILES ${EAGL_HEADER_FILES})
+file(GLOB FONT_HEADER_FILES "${CMAKE_CURRENT_SOURCE_DIR}/font/*.h")
+list(APPEND APP_HEADER_FILES ${FONT_HEADER_FILES})
 
 set(APP_SOURCE_FILES
   ./AppDelegate.m
   ./ViewController.mm
+  ./TTDisplayLayer.mm
   ./main.m
 )
 
-#file(GLOB EAGL_SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/AAPLEAGLLayer/*.mm")
-#list(APPEND APP_SOURCE_FILES ${EAGL_SOURCE_FILES})
+file(GLOB FONT_SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/font/*.mm")
+list(APPEND APP_SOURCE_FILES ${FONT_SOURCE_FILES})
 
 
 set(RESOURCES
   ./Main.storyboard
   ./LaunchScreen.storyboard
 )
+file(GLOB DEMO_FONTS "${CMAKE_CURRENT_SOURCE_DIR}/../Resources/Font")
+list(APPEND RESOURCES ${DEMO_FONTS})
 
 add_executable(
     ${APP_NAME}
@@ -68,13 +70,26 @@ add_executable(
 
 # Locate system libraries on iOS
 find_library(UIKIT UIKit)
+find_library(FOUNDATION Foundation)
 find_library(AVFOUNDATION AVFoundation)
+find_library(QUARTZCORE QuartzCore)
 find_library(OPENGLES OpenGLES)
 
 # link the frameworks located above
 target_link_libraries(${APP_NAME} ${UIKIT})
+target_link_libraries(${APP_NAME} ${FOUNDATION})
 target_link_libraries(${APP_NAME} ${AVFOUNDATION})
+target_link_libraries(${APP_NAME} ${QUARTZCORE})
 target_link_libraries(${APP_NAME} ${OPENGLES})
+target_link_libraries(${APP_NAME} harfbuzz freetype)
+
+target_link_libraries(${APP_NAME} DDLTGFont)
+
+target_include_directories(${APP_NAME} PUBLIC DDLTGFont)
+
+include_directories(
+    "${CMAKE_CURRENT_SOURCE_DIR}/../Common/DDLTGFont/include"
+    )
 
 # Turn on ARC
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fobjc-arc")

@@ -1,0 +1,6 @@
+#ifndef _custom_define_h
+#define _custom_define_h
+
+#define DDLTG_ASSERT_MODE 1
+
+#endif
